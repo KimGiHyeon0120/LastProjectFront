@@ -86,9 +86,34 @@ body {
 }
 
 .content {
-    padding: 10px;
-    flex: 1;
-    background-color: #f9f9f9;
+    padding: 20px;
+    background-color: #f4f5f7;
+}
+
+.summary-section, .timeline-section, .goal-section, .task-list {
+    margin-bottom: 20px;
+}
+
+.summary-item, .goal-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    background: #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 12px;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.progress {
+    background: #4caf50;
+    height: 100%;
 }
 
 .board {
