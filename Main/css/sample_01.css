@@ -94,6 +94,79 @@ body {
     margin-bottom: 20px;
 }
 
+.horizontal-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.timeline-row {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    padding: 10px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.timeline-item.completed {
+    border-color: #4caf50;
+}
+
+.timeline-item.in-progress {
+    border-color: #0079bf;
+}
+
+.timeline-item.pending {
+    border-color: #ff9800;
+}
+
+.timeline-marker {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    background-color: currentColor;
+}
+
+.timeline-item.completed .timeline-marker {
+    color: #4caf50;
+}
+
+.timeline-item.in-progress .timeline-marker {
+    color: #0079bf;
+}
+
+.timeline-item.pending .timeline-marker {
+    color: #ff9800;
+}
+
+.timeline-content h3 {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #333;
+}
+
+.timeline-content p {
+    font-size: 12px;
+    color: #555;
+    margin: 0;
+}
+
+
 .summary-item, .goal-item {
     background: white;
     border: 1px solid #ddd;
